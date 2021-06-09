@@ -14,7 +14,7 @@ const Nasa = () => {
 
         return (
                 <div className="main">
-
+                        <h2>Your current location:</h2>
                         
                         <img src={`${baseURL}?lon=${lon}&lat=${lat}&dim=${dim}&api_key=${key}`} alt='satellite view of your location' />
 

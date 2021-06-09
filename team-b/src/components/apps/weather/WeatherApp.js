@@ -47,7 +47,7 @@ const WeatherApp = () => {
 
     return(
         <div className='sampleRes'>
-            <h3>Current Weather:</h3>
+            <h2>Current Weather:</h2>
             <h4>Humidity: 84%</h4>
             <h4>Temp: 75F</h4>
             <h4>Pressure: 30.02 inHg</h4>

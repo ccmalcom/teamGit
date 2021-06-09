@@ -65,13 +65,24 @@ const FindButton = styled.button`
     font-size: 32px;
     `
 
-    const PagButton = styled.button`
+    const PagButtonPrev = styled.button`
     border: none;
     height: 3em;
     width: 50%;
     background-color:#FFEB33;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-right: 1px solid #BFAD26;
+    cursor: pointer;
+    &:hover{
+        background-color: #BFAD26
+        ;
+    }
+`
+    const PagButtonNext = styled.button`
+    border: none;
+    height: 3em;
+    width: 50%;
+    background-color:#FFEB33;
+    border-left: 1px solid #BFAD26;
     cursor: pointer;
     &:hover{
         background-color: #BFAD26
@@ -165,8 +176,8 @@ const EventDisplay = (props) =>{
             </Wrapper>
                 {results.length > 0 ? 
                 <PaginationDiv>
-                <PagButton onClick={(e) => changePageNumber(e, 'down')}>Previous 10</PagButton>
-                <PagButton onClick={(e) => changePageNumber(e, 'up')}>Next 10</PagButton></PaginationDiv> : null}
+                <PagButtonPrev onClick={(e) => changePageNumber(e, 'down')}>Previous 10</PagButtonPrev>
+                <PagButtonNext onClick={(e) => changePageNumber(e, 'up')}>Next 10</PagButtonNext></PaginationDiv> : null}
         </>
     );
 };
