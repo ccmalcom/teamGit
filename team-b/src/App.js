@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
 
-      <WeatherApp/> 
+      {/* <WeatherApp location={location}/>  */}
 
       <EventDisplay location={location} />
 
