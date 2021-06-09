@@ -1,0 +1,6 @@
+img {
+    height: 50vh;
+    width: 50vh;
+    image-rendering: optimizeQuality;    
+    
+}
