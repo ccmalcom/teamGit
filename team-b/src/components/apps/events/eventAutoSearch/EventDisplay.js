@@ -8,7 +8,6 @@ const Wrapper = styled.div`
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     overflow-x: auto;
     margin: auto;
-    margin-top: 20px;
 `
 const Result = styled.div`
     border: 1px solid #1F262D;

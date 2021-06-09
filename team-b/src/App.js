@@ -13,11 +13,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-
-      {/* <WeatherApp location={location}/>  */}
-
       <EventDisplay location={location} />
+      <div className='foo'>
       <Nasa />
+      <WeatherApp location={location}/> 
+      </div>
+
 
     </div>
   

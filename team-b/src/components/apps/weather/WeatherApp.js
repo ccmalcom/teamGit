@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './WeatherApp.css'
 
 
 const WeatherApp = () => {
@@ -45,11 +46,14 @@ const WeatherApp = () => {
     },[]);
 
     return(
-        <div>
-
-<h3>{results.main.humidity}</h3>
+        <div className='sampleRes'>
+            <h3>Current Weather:</h3>
+            <h4>Humidity: 84%</h4>
+            <h4>Temp: 75F</h4>
+            <h4>Pressure: 30.02 inHg</h4>
+{/* <h3>{results.main.humidity}</h3>
 <h3>{results.main.temp}</h3>
-<h3>{results.main.pressure}</h3>
+<h3>{results.main.pressure}</h3> */}
 {/*             
             {results.weather.map((item, index) => (
                 <>
@@ -68,7 +72,6 @@ const WeatherApp = () => {
                 )
             })} */}
 
-            <h3>Hello</h3>
         </div>
     )
 }
