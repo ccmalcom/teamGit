@@ -24,8 +24,8 @@ const Section = styled.div`
 `
 
 const apiKey='oJ0AjAhVVA2AFkcZnb5I5fqjAyMlsev2';
-const lat = '39.6962119';
-const long = '-86.2632829';
+// const lat = '39.6962119';
+// const long = '-86.2632829';
 
 const baseUrl = `https://app.ticketmaster.com/discovery/v2/events?apikey=${apiKey}`
 

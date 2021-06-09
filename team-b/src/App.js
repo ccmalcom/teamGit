@@ -4,22 +4,16 @@ import './App.css';
 import Nasa from './components/apps/satellite/Satellite';
 
 import WeatherApp from './components/apps/weather/WeatherApp';
+import EventDisplay from './components/apps/events/eventAutoSearch/EventDisplay'
 
 function App() {
 
-  return (
-    <div className="App">
-      <WeatherApp/> 
-
-import EventDisplay from './components/apps/events/eventAutoSearch/EventDisplay'
-
-
   const location = Geolocation();
-
+  
   return (
     <div className="App">
 
-
+      <WeatherApp/> 
 
       <EventDisplay location={location} />
 
