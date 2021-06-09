@@ -27,18 +27,20 @@ const apiKey='oJ0AjAhVVA2AFkcZnb5I5fqjAyMlsev2';
 const lat = '39.6962119';
 const long = '-86.2632829';
 
-const baseUrl = `https://app.ticketmaster.com/discovery/v2/events?apikey=${apiKey}&latlong=${lat},${long}&radius=25&unit=miles&locale=*&size=10&page=`
+const baseUrl = `https://app.ticketmaster.com/discovery/v2/events?apikey=${apiKey}`
 
 
-const EventDisplay = () =>{
+const EventDisplay = (props) =>{
     const[ results, setResults ] = useState([]);
     const[ pageNumber, setPageNumber ] = useState(0);
+    const location = props.location;
+    console.log('location:', location)
     console.log(pageNumber);
     console.log(results);
     
-    
+    // ! do not reload page! if failure to compile, change location.coordinates.lat to lat, same with long, save, then put it back in
     const fetchResults = () =>{
-        let url=`${baseUrl}${pageNumber}&sort=date,asc`
+        let url=`${baseUrl}&latlong=${location.coordinates.lat},${location.coordinates.long}&radius=25&unit=miles&locale=*&size=10&page=${pageNumber}&sort=date,asc`
         fetch(url)
         .then(res => res.json())
         .then(data => setResults(data._embedded.events))

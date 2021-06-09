@@ -13,7 +13,7 @@ function App() {
 
 
 
-      <EventDisplay />
+      <EventDisplay location={location} />
 
     </div>
   );
