@@ -8,7 +8,7 @@ const Wrapper = styled.div`
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     overflow-x: auto;
     margin: auto;
-    margin-top: 5vh
+    margin-top: 20px;
 `
 const Result = styled.div`
     border: 1px solid #1F262D;
@@ -48,6 +48,24 @@ const Button = styled.button`
     letter-spacing: 1px;
     text-align: center;
     `
+const FindButton = styled.button`
+    border: none;
+    border-radius: 20px;
+    height: 5em;
+    width: 5em;
+    background-color:#FFE733;
+    cursor: pointer;
+    &:hover{
+        background-color: #BFAD26
+        ;
+    }
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 32px;
+    `
+
     const PagButton = styled.button`
     border: none;
     height: 3em;
@@ -124,7 +142,7 @@ const EventDisplay = (props) =>{
     return(
         <>
             <Wrapper>
-                {results.length === 0? <Button onClick= {(e) => handleSubmit(e)}>Find Events</Button> : null}
+                {results.length === 0? <FindButton onClick= {(e) => handleSubmit(e)}>Find Events</FindButton> : null}
             {results.map(result =>{
                 return(
                     <Result>
