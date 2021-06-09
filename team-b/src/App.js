@@ -1,9 +1,10 @@
 import './App.css';
+import EventDisplay from './components/apps/events/eventAutoSearch/EventDisplay'
 
 function App() {
   return (
     <div className="App">
-      test 
+      <EventDisplay />
     </div>
   );
 }
