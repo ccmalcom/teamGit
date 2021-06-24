@@ -97,7 +97,7 @@ const PaginationDiv = styled.div`
     margin: auto
 `
 
-const apiKey='oJ0AjAhVVA2AFkcZnb5I5fqjAyMlsev2';
+const apiKey=process.env.REACT_APP_API_KEY;
 // const lat = '39.6962119';
 // const long = '-86.2632829';
 
